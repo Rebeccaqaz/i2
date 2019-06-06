@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/damai.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+<div class="nav">
+	<div class="nav-box">
+    	<a herf=""><img class="i-logo" src="img/damai_log.png" alt="大麦"></a>
+        <div class="location-header" >
+        	<img class="i-icon-location" src="img/dw.png" alt="定位">
+            <span class="city-location">全国</span>
+            <img class="i-arrow-location" src="img/TB1vnUBxStYBeNjSspaXXaOOFXa-20-12.png" alt="箭头">
+            <div class="city-header-wrap">
+            	<div class="city-header">
+                	<div class="now-city">
+                    	<span class="title-city">当前城市:</span> 
+                        <span class="name-city select-city">全国</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommend-header">
+			<a href="" class="type-recommendselect" >首页</a>
+			<a href="" class="type-recommend" >分类</a>
+		</div>
+        <div class="search-header">
+        	<img class="pic" src="img/TB1qv3jxGmWBuNjy1XaXXXCbXXa-34-36.png">
+            <input class="input-search" placeholder="搜索明星、演出、体育赛事">
+           <button type="submit" class="SearchBtn">
+                  <span id="magnifying-glass">搜索</span>
+           </button>
+            
+        </div>
+        <div class="right-header" >
+			<div class="user-header">
+				<a href="javascript:void(0)" class="J_userinfo_img">
+                 <img class="i-box-header" src="img/TB14UKCGQyWBuNjy0FpXXassXXa-54-54.png">
+                <span class="span-box-userinfo">登录</span></a>
+				<div class="list-login">
+						<a href="" class="li-login select" >个人信息</a>
+						<a href="" class="li-login" >账号设置</a>
+						<a href="" class="li-login" >订单管理</a>
+						<a href="" data-spm="dexit" >退出登录</a>
+				</div>
+			</div>
+			<div class="download-header">
+				<a href="javascript:void(0)" class="download">
+                 <img class="i-box-download" src="img/TB1A9eIGKuSBuNjy1XcXXcYjFXa-54-54.png">
+				<span class="span-box-download">下载</span></a>
+				<div class="ewm-download">
+					<img class="i-ewm" src="img/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg">
+				</div>
+			</div>
+			<div class="header-english">
+				<a href="" data-spm="english">
+					<img class="i-box-englishr" src="img/TB13UKCGQyWBuNjy0FpXXassXXa-54-54.png" alt="英文站">
+					<span class="span-box-english">English</span>
+				</a>
+			</div>
+		</div>
+    </div>
+</div>
+<!--<div class="slides">
+	<div class="img-content"><img src="img/carousel_3.png"></div>-->
+ <script src="js/swiper.min.js"></script>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/carousel_3.png" alt=""></div>
+       <!-- <div class="swiper-slide"><img src="img/carousel_2.png" alt=""> </div>-->
+        <div class="swiper-slide"><img src="img/play01.png" alt=""></div>
+    </div>
+        <!-- 如果需要分页器 -->
+    	<div class="swiper-pagination"></div>
+    
+    	<!-- 如果需要导航按钮 -->
+    	<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    	<!--</div>-->
+    	<!--<div class="pre">
+    	<span>&lt;</span>
+    	</div>
+   	 	<div class="next">
+    	<span>&gt;</span>-->
+ </div>
+   
+ <script type="text/javascript">
+    window.onload = function() {     
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+	 // 自动播放时间
+        autoplay:1000,
+
+        // 播放的速度
+        speed:2000,
+		
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+	　　　// 这样，即使我们滑动之后， 定时器也不会被清除
+　　　　  autoplayDisableOnInteraction : false,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+  }) 
+	}       
+  </script>
+    <div class="sidebar">
+    	<div class="item">
+        	<div class="icon service"></div>
+            <p>在线客服</p>
+        </div>
+        <div class="item">
+        	<div class="icon damai"></div>
+            <p>app下载</p>
+            <div class="qrcode"></div>
+        </div>
+        <div class="item">
+        	<div class="icon gotop"></div>
+            <p>回到顶部</p>
+         </div>
+    </div>   	
+</div>
+<div class="category">
+<!--a转变成块 两种方法. 第一 a{display:block; } 第二种 加浮动 ,左浮动右浮动均可, 浮动之后,默认转
+换块显示 a{float:left;}-->
+	<a href="">
+		<span class="category__icon category__icon__ych"></span>
+        <p class="category__info">演唱会</p>
+    </a>
+    <a href="">
+		<span class="category__icon category__icon__hjgj"></span>
+        <p class="category__info">话剧歌剧</p>
+    </a> 
+    <a href="">
+		<span class="category__icon category__icon__ty"></span>
+        <p class="category__info">体育</p>
+    </a> 
+    <a href="">
+		<span class="category__icon category__icon__etqz"></span>
+        <p class="category__info">儿童亲子</p>
+    </a> 
+    <a href="">
+		<span class="category__icon category__icon__zlxx"></span>
+        <p class="category__info">展览休闲</p>
+    </a> 
+    <a href="">
+		<span class="category__icon category__icon__yyh"></span>
+        <p class="category__info">音乐会</p>
+    </a> <a href="">
+		<span class="category__icon category__icon__qyzt"></span>
+        <p class="category__info">曲苑杂坛</p>
+    </a> 
+    <a href="">
+		<span class="category__icon category__icon__wdbl"></span>
+        <p class="category__info">舞蹈芭蕾</p>
+    </a> <a href="">
+		<span class="category__icon category__icon__ecy"></span>
+        <p class="category__info">二次元</p>
+    </a> 
+    <a href="">
+		<span class="category__icon category__icon__ly"></span>
+        <p class="category__info">旅游</p>
+    </a>  
+</div>
+<div class="wrap">
+	<div class="content d1">
+    	<div class="head">
+        	<span class="head-title">演唱会</span>
+            <a herf="" class="head-more">查看全部</a>
+        </div>
+        <div class="box">
+        	<div class="box-left">
+            		<a href="">
+                    	<img src="img/160009_n.jpg">
+                    </a>                   
+            </div>
+            <div class="box-right">
+            	<a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content d1">
+    	<div class="head">
+        	<span class="head-title">演唱会</span>
+            <a herf="" class="head-more">查看全部</a>
+        </div>
+        <div class="box">
+        	<div class="box-left">
+            		<a href="">
+                    	<img src="img/160009_n.jpg">
+                    </a>                   
+            </div>
+            <div class="box-right">
+            	<a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content d1">
+    	<div class="head">
+        	<span class="head-title">演唱会</span>
+            <a herf="" class="head-more">查看全部</a>
+        </div>
+        <div class="box">
+        	<div class="box-left">
+            		<a href="">
+                    	<img src="img/160009_n.jpg">
+                    </a>                   
+            </div>
+            <div class="box-right">
+            	<a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+                <a class="box-right__item">
+                	<div class="itemimg">
+                    	<img src="img/160231_n.jpg">
+                    </div>
+                    <div class="iteminfo">
+						<div class="title" title="成都·2019仙人掌音乐节">成都·2019仙人掌音乐节</div>
+						<div class="venue">成都蔚然花海</div>
+						<div class="showtime">2019.07.13-07.14</div>
+						<div class="price">¥450<span>起</span></div>
+					</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+	<div class="w1200">
+    	<ul class="footer__links">
+            
+            <li class="footer__links__list"><a href="">帮助中心</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">公司介绍</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">品牌识别</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">公司大事记</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">协议及隐私权政策</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="" >廉正举报</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">联系合作</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">招聘信息</a></li>
+            <li class="footer__links__grep">|</li>
+            
+            <li class="footer__links__list"><a href="">防骗秘籍</a></li>
+            
+            
+        </ul>
+        <div class="footer__ft">
+            <div class="footer__ft_fl">
+                <a href=""  class="footer__ft__logo">
+                    <img src="img/TB1otMASmzqK1RjSZPxXXc4tVXa-167-60.png">
+                </a>
+                <div class="footer__ft__code__box">
+                    <img class="footer__ft__code" src="img/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg">
+                    <span>APP下载</span>
+                </div>
+            </div>
+            <div class="footer__ft_fr">
+                <div class="footer__fr__contact">
+
+                    <a style="margin-left:0;" href="" class="footer__fr__contact__btn alime">在线客服</a>
+                </div>
+                <ul class="footer__ft__words">
+                    <li class="footer__ft__certificate"><a href="">京ICP证031057号</a></li>
+                    <li class="footer__ft__grep">|</li>
+                    <li class="footer__ft__certificate"><a href="">京ICP备11043884号</a></li>
+                    <li class="footer__ft__grep">|</li>
+                    <li class="footer__ft__certificate"><a href="">京公网安备11010502037341号</a></li>
+                    <li class="footer__ft__grep">|</li>
+                    <li class="footer__ft__certificate"><a href="">广播电视节目制作经营许可证
+                        (京)字第02253号</a></li>
+                </ul>
+                <div class="clearBoth"></div>
+                <ul class="footer__ft__words">
+                    <li class="footer__ft__certificate"><a href="">网络文化经营许可证
+                        京网文[2016]3438-413号</a></li>
+                    <li class="footer__ft__grep">|</li>
+                    <li class="footer__ft__certificate"><a href="">营业性演出许可证
+                        京市演587号</a></li>
+                </ul>
+                <div class="clearBoth"></div>
+                <ul class="footer__ft__words">
+                    <li class="footer__ft__certificate">北京红马传媒文化发展有限公司 版权所有</li>
+                    <li class="footer__ft__certificate"><a href="">大麦网</a></li>
+                    <li>Copyright 2003-2018 All Rights Reserved</li>
+                </ul>
+                <div class="clearBoth"></div>
+                <ul class="footer__ft__words">
+                    <li>举报投诉邮箱：damai_tousu@member.alibaba.com</li>
+                </ul>
+                <div class="clearBoth"></div>
+                <div class="footer__ft__img">
+                    <span id="siteseal">
+                    <img style="cursor:pointer;cursor:hand" class="footer__ft__img1" src="img/TB1gw_ZxNWYBuNjy1zkXXXGGpXa-131-32.gif" >
+                    </span>
+                    <a href="">
+                        <img class="footer__ft__img2" alt="" src="img/TB1ZO80pyOYBuNjSsD4XXbSkFXa-141-41.png">
+                    </a>
+
+                    <a href="">
+                        <img src="img/TB1Y580pyOYBuNjSsD4XXbSkFXa-83-50.png" class="footer__ft__img3">
+                    </a>
+                    <a  href="">
+                        <img src="imgTB1pM_ZxNWYBuNjy1zkXXXGGpXa-114-40.png" class="footer__ft__img4w">
+                    </a>
+                    <a href="">
+                        <img class="footer__ft__img4" src="img/TB1C4nNxTlYBeNjSszcXXbwhFXa-114-42.png">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+
+.swiper-container{
+
+width: 100%;
+
+height: 3.6667rem;
+position: relative;
+overflow: hidden;
+
+}
+
+.swiper-slide{
+
+    width: 100%;
+
+    height: 3.6667rem;
+
+}
+
+.swiper-slide img{
+
+    width: 100%;
+
+    height: 100%;
+
+}  
+</style> 
+</head>
+
+<body>
+<script src="js/swiper.min.js"></script>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/160304_n.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/160231_n.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/160247_n.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/160247_n.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+   <!-- <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>-->
+</div>
+<script type="text/javascript">
+    window.onload = function() {     
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+	 // 自动播放时间
+        autoplay:1000,
+
+        // 播放的速度
+        speed:2000,
+		
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+	　　　// 这样，即使我们滑动之后， 定时器也不会被清除
+　　　　  autoplayDisableOnInteraction : false,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+  }) 
+	}       
+  </script>
+
+
+</body>
+</html>

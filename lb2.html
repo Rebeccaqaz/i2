@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+@keyframes move {
+0% {
+transform:translateX(0%);
+}
+20% {
+transform:translateX(0%);
+}
+25% {
+transform:translateX(-500px);
+}
+45% {
+transform:translateX(-500px);
+}
+50% {
+transform:translateX(-1000px);
+}
+70% {
+transform:translateX(-1000px);
+}
+75% {
+transform:translateX(-1500px);
+}
+95% {
+transform:translateX(-1500px);
+}
+100% {
+transform:translateX(-2000px);
+}
+}
+.wrap {
+	width: 1260px;
+	height: 320px;
+	position: relative;
+	margin: 50px auto;
+	border: 5px solid #f00;
+	overflow: hidden;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	vertical-align: top;
+	border: none;
+}
+.list {
+	width: 500%;
+	animation: move 7s linear infinite
+}
+.list li {
+	float: left;
+	width: 1260px;
+	height: 320px;
+}
+.list img {
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+
+<body>
+<!--<div class="viewport">
+  <div class="wrap"> <img src="img/160247_n.jpg" alt=""> <img src="img/160231_n.jpg" alt=""> <img src="img/160304_n.jpg" alt=""> </div>
+  <div class="page">
+   <label for="pic1"></label>
+    <label for="pic2"></label>
+    <label for="pic3"></label>
+  </div>
+</div>-->
+<div class="wrap">
+  <ul class="list">
+    <li><img src="img/carousel_1.jpg" alt=""/></li>
+    <li><img src="img/carousel_2.jpg" alt=""/></li>
+    <li><img src="img/carousel_3.jpg" alt=""/></li>
+  </ul>
+</div>
+</body>
+</html>
